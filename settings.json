@@ -1,8 +1,7 @@
 {
   "version": 1,
   "edition": "October 2026",
-  "instructions": "Choose your analysis and sample count, enter your project details, then download an Excel request and preview the notification email to Negar. The lab keeps the Master tracker in Excel.",
-  "recipient": "negar@example.test",
+  "instructions": "Choose your collaboration type, analyses and sample counts. Enter fictional project details to try online submission and see what the lab would download.",
   "bulk": {
     "percent": 10,
     "otherInsitu": 10,
