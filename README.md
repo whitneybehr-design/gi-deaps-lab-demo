@@ -1,6 +1,6 @@
-# COSMOLAB sample cost calculator
+# Geological Institute in D-EAPS RadioCarbon and Cosmolab Calculator
 
-Researchers can [calculate costs and download an Excel request](https://whitneybehr-design.github.io/cosmolab-trial/). The email notification is a demo preview.
+Researchers can [calculate costs and download an Excel request](https://whitneybehr-design.github.io/cosmolab-trial/). The email notification is a demo preview. The GI deployment package contains the separate private Master importer and instructions for hosting under GI ownership.
 
 ## Edit the calculator
 
