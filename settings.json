@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "edition": "October 2026",
+  "instructions": "Choose your analysis and sample count, enter your project details, then download an Excel request and preview the notification email to Negar. The lab keeps the Master tracker in Excel.",
+  "recipient": "negar@example.test",
+  "bulk": {
+    "percent": 10,
+    "otherInsitu": 10,
+    "otherCarbon": 50,
+    "outside": 20,
+    "outsideInsitu": 10
+  },
+  "fees": {
+    "be": {
+      "crush": [
+        50,
+        70,
+        115
+      ],
+      "quartz": [
+        100,
+        200,
+        300
+      ],
+      "chem": [
+        100,
+        200,
+        300
+      ],
+      "ams": [
+        0,
+        250,
+        250
+      ],
+      "icp": [
+        5,
+        25,
+        35
+      ]
+    },
+    "pair": {
+      "alchem": [
+        100,
+        100,
+        150
+      ],
+      "alams": [
+        0,
+        250,
+        250
+      ],
+      "alicp": [
+        5,
+        25,
+        35
+      ]
+    },
+    "met": {
+      "prep": [
+        120,
+        200,
+        300
+      ],
+      "ams": [
+        0,
+        250,
+        250
+      ]
+    },
+    "insitu": {
+      "prep": [
+        100,
+        350,
+        600
+      ],
+      "ams": [
+        0,
+        150,
+        200
+      ]
+    },
+    "carbon": {
+      "prep": [
+        20,
+        35,
+        40
+      ],
+      "gas": [
+        0,
+        80,
+        130
+      ],
+      "solid": [
+        0,
+        150,
+        180
+      ]
+    }
+  }
+}
