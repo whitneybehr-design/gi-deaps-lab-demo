@@ -1,7 +1,9 @@
 # Geological Institute in D-EAPS RadioCarbon and Cosmolab Calculator
 
-[Open the personal trial](https://whitneybehr-design.github.io/cosmolab-trial/) and use fictional details to try **Review request → Submit demo request → Open demo lab inbox**. The inbox lets you download the generated `GI_DEAPS_labrequest_<reference>.xlsx` file. Demo submissions stay in the current tab.
+## Try the workflow
 
-[Open the trial settings editor](https://whitneybehr-design.github.io/cosmolab-trial/#edit-calculator) to preview fee, discount or instruction changes. To publish a change to the personal trial, download the settings, upload them to this repository, and merge the reviewed pull request.
+1. [Requester](https://whitneybehr-design.github.io/cosmolab-trial/GI_DEAPS_labrequest.html). Enter fictional details and choose **Review request → Submit demo request**.
+2. [Lab admin](https://whitneybehr-design.github.io/cosmolab-trial/GI_DEAPS_admin.html). Open the demo inbox and download a `GI_DEAPS_labrequest_<reference>.xlsx` file. Download the blank demo Master and try importing that request.
+3. [Calculator editor](https://whitneybehr-design.github.io/cosmolab-trial/GI_DEAPS_calculator_editor.html). Edit a fee and choose **Save rates for this demo**, then open the requester page again to see it. Use **Restore published settings** to reset.
 
-GI production requires the separately packaged ETH intake service. The GI handoff guide explains Pages publishing, access, and private staff downloads.
+Demo requests and saved rates stay in the current browser, including when switching between pages or tabs. The demo pages are public and for fictional data only. The separately packaged GI deployment adds ETH sign-in and shared staff access.
