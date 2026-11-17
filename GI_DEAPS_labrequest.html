@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Geological Institute in D-EAPS RadioCarbon and Cosmolab Calculator</title><meta name="description" content="Estimate COSMOLAB sample preparation and measurement costs in CHF, using the October 2026 fee structure."><style>:root{--ink:#183b63;--green:#275b94;--paper:#f4f6f8;--muted:#526175;--line:#d6dde5}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px 'DM Sans',Arial,sans-serif}button,input,select{font:inherit}button,a,input,select,summary{-webkit-tap-highlight-color:transparent}button,summary{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #3972b4;outline-offset:3px}header{height:98px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 6.5%}.brand{display:flex;align-items:center;gap:12px;color:var(--ink);text-decoration:none;letter-spacing:2px;font:800 20px Manrope,Arial}.mark{border:1px solid var(--ink);height:37px;width:37px;border-radius:50%;display:grid;place-items:center;position:relative;font-size:22px}.mark span{font-size:17px;position:absolute;left:19px;top:15px;background:var(--paper);border-radius:50%}.edition,.eyebrow{font-size:11px;letter-spacing:1.9px;font-weight:700}.edition{display:flex;align-items:center;gap:14px}.edition i{height:5px;width:5px;background:#7d8da2;border-radius:50%}main{max-width:1200px;margin:auto;padding:58px 36px 0}.intro{padding-bottom:42px;position:relative}.intro:after{content:'10 / 26 / 14';position:absolute;right:10px;top:15px;font:500 44px Manrope,Arial;letter-spacing:4px;color:#e2e8f0;transform:rotate(-5deg)}h1{font:500 clamp(38px,5vw,60px)/1.12 Manrope,Arial;letter-spacing:-2.7px;margin:20px 0}h1 em{font-style:normal;color:var(--green)}.intro p{line-height:1.6;color:var(--muted);font-size:16px}.workspace{display:grid;grid-template-columns:minmax(0,1fr) 362px;gap:32px;align-items:start}.panel,.group{background:#fff;border:1px solid var(--line);border-radius:12px}.settings{padding:25px 28px}.section-label{display:flex;align-items:center;gap:12px;margin-bottom:24px}.section-label>span{font-size:11px;color:#526175;border:1px solid #c7d1dd;border-radius:50%;width:27px;height:27px;display:grid;place-items:center}h2{font:700 18px Manrope,Arial;margin:0;letter-spacing:-.4px}label:not(.check){display:block;font-weight:600;font-size:12px;margin-bottom:9px}select,input[type=number]{border:1px solid #bcc9d6;border-radius:6px;color:var(--ink);background:#ffffff;min-height:46px;padding:10px 12px;width:100%}select{padding-right:25px}.check{display:flex;gap:10px;align-items:center;line-height:1.5;font-size:13px}.settings .check{margin-top:20px}input[type=checkbox]{accent-color:var(--green);width:16px;height:16px;flex-shrink:0;margin:0}.help{font-size:12px;line-height:1.55;color:var(--muted);margin:7px 0 0 26px}.sample-section{margin-top:30px}.sample-section>.section-label{margin-left:4px;margin-bottom:16px}.group{padding:23px 26px;margin-bottom:14px}.group-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.group-title{font-size:11px;font-weight:700;letter-spacing:1.3px;color:var(--muted)}.remove{background:none;border:0;color:var(--muted);font-size:12px;padding:6px}.group-fields{display:grid;grid-template-columns:1fr 100px;gap:15px}.services-title{font-size:11px;color:var(--muted);letter-spacing:1px;margin:23px 0 13px}.service{display:grid;grid-template-columns:1fr auto;gap:10px;margin:13px 0;align-items:center}.rate{font-size:12px;color:var(--muted);white-space:nowrap}.group-total{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:16px;margin-top:19px;font-size:13px}.group-total strong{font-weight:700}.add{background:transparent;border:1px dashed #9baec3;border-radius:8px;width:100%;padding:17px;color:var(--green);font-weight:600}.add:hover{background:#eaf0f7}.summary{background:#edf3fa;border:1px solid #c7d5e5;border-radius:12px;padding:29px}.total{font:600 40px Manrope,Arial;letter-spacing:-1.7px;margin:22px 0 7px;overflow-wrap:anywhere}.subtle{color:#526175;font-size:13px;line-height:1.6}.rule{height:1px;background:#c7d5e5;margin:24px 0}.summary-row{display:flex;justify-content:space-between;gap:15px;margin:17px 0;font-size:13px}.summary-row span small{display:block;font-size:11px;color:#526175;margin-top:5px}.summary-row strong{white-space:nowrap;font-size:13px}.estimate-note{display:flex;gap:8px;align-items:center}.estimate-note p{font-size:12px;margin:0}.dot{width:6px;height:6px;background:#386596;border-radius:50%;flex-shrink:0}.small{font-size:12px}.primary{border:0;background:var(--ink);color:#fff;border-radius:6px;padding:15px 14px;width:100%;display:flex;justify-content:space-between;font-size:12px;margin-top:23px}.primary:hover{background:var(--green)}.text-button{background:none;border:0;color:var(--ink);font-size:12px;display:block;margin:16px auto 0;padding:5px}.source{font-size:11px;line-height:1.6;color:var(--muted);padding:0 7px}.notice{background:#fff8e6;border:1px solid #e2d4ad;border-radius:9px;padding:16px 18px;font-size:12px;line-height:1.6;margin-top:15px;color:#66511e}.notice strong{display:block;margin-bottom:4px}.method{margin-top:36px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:21px 0}.method summary{font-size:13px;font-weight:600;list-style:none;display:flex;justify-content:space-between}.method p{max-width:790px;color:var(--muted);font-size:13px;line-height:1.7}footer{padding:27px 0 35px;display:flex;justify-content:space-between;gap:20px;font-size:10px;letter-spacing:1px;color:var(--muted)}.footer-dot{padding:0 8px;color:#7d8da2}aside{position:sticky;top:24px}[hidden]{display:none!important}@media(max-width:850px){.workspace{grid-template-columns:1fr 310px;gap:20px}main{padding:40px 22px 0}.settings,.group{padding:22px 20px}.summary{padding:23px}.intro:after{display:none}.total{font-size:34px}}@media(max-width:690px){header{height:78px;padding:0 22px}.edition{font-size:9px;letter-spacing:1px}.edition i{display:none}.brand{font-size:16px;gap:8px}.workspace{grid-template-columns:1fr}h1{letter-spacing:-1.8px}.intro{padding-bottom:22px}.intro p{font-size:14px}aside{position:static}.group-fields{grid-template-columns:1fr 85px}.summary{padding:26px}.total{font-size:42px}footer{flex-direction:column;gap:12px}.desktop{display:none}}@media print{body{background:white;font-size:11px}header{height:55px}main{padding-top:15px}.intro{padding-bottom:10px}h1{font-size:30px}.intro p,.add,.remove,.primary,.text-button,footer{display:none}.workspace{grid-template-columns:1fr 280px;gap:15px}.settings,.group,.summary{padding:15px}.group,.summary{break-inside:avoid}aside{position:static}.total{font-size:28px}.method{margin-top:15px}select,input{appearance:none}}
+
+main{padding-top:30px}.intro{padding-bottom:22px}.intro:after{display:none}.intro h1{font-size:26px;letter-spacing:-.6px;margin:0 0 12px}.intro p{max-width:850px;font-size:14px;margin:0;line-height:1.65}.settings select{font-size:13px}
+
+.connection{font-size:13px;line-height:1.6;background:#eaf0f7;padding:14px 18px;border:1px solid #c7d5e5;border-radius:7px;margin:0 0 24px}.connected{background:#edf3fa}.request-form{padding:28px;margin-top:30px}.request-form>p{font-size:13px;line-height:1.65}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:20px 0}.request-form input:not([type=checkbox]),.request-form textarea,.request-form select{width:100%;min-height:43px;padding:10px;border:1px solid #bcc9d6;border-radius:6px;background:#ffffff;color:var(--ink);font:inherit}.request-form textarea{resize:vertical}.actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:20px 0}.actions .primary{width:auto;margin:0}.secondary{display:inline-block;border:1px solid #b5c3d3;border-radius:6px;background:#ffffff;color:var(--ink);padding:12px 16px;font:inherit;font-size:13px;cursor:pointer}.secondary:hover{background:#eaf0f7}.file-label{margin:0!important;font-weight:400!important}button:disabled{cursor:not-allowed;opacity:.5}.table-scroll{width:100%;overflow:auto;margin:20px 0}table{border-collapse:collapse;min-width:700px;width:100%;font-size:12px;text-align:left}th{background:#edf1f5;padding:12px;white-space:nowrap;font-weight:600}td{padding:9px;border-bottom:1px solid var(--line);vertical-align:top}td small{display:block;color:var(--muted);margin-top:5px}.sample-table input{min-width:120px}.sample-table select{min-width:160px}.sample-table input[type=number]{min-width:85px}h3{font-size:17px;letter-spacing:-.3px;margin:28px 0 10px}.review-panel{background:#f5f7fa;border:1px solid #c7d5e5;border-radius:8px;padding:22px;margin:24px 0}.review-panel h3{margin-top:0}.review-panel p,.history{font-size:13px;line-height:1.7}.history{padding-left:20px}.review-panel .primary{width:auto}.form-message{font-weight:500;line-height:1.6}.record-open{margin:0;padding:0;text-decoration:underline}.request-form .group-head h3{margin:0}@media(max-width:690px){.contact-grid{grid-template-columns:1fr}.request-form{padding:20px}.actions{gap:8px}}@media print{.connection,.actions,#review-panel,#lab-tab,#my-requests{display:none}.request-form{break-before:page}}
+
+.view-tabs{display:flex;gap:0;border-bottom:1px solid #c7d1dd;margin:24px 0 28px}.view-tabs button{border:0;border-bottom:3px solid transparent;background:transparent;padding:14px 22px;color:#526175;font-size:14px;font-weight:600}.view-tabs button[aria-selected="true"]{color:#183b63;border-bottom-color:#275b94;background:#fff}.view-tabs button:hover{background:#edf1f5}.view-intro{margin:0 0 24px}.view-intro h2{font-size:23px;margin-bottom:8px}.view-intro p{color:#526175;font-size:14px;line-height:1.6;max-width:850px}.manager-steps{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0;font-size:13px;color:#183b63}.manager-steps span{padding:8px 12px;border:1px solid #c7d1dd;background:#fff;border-radius:5px}.summary{box-shadow:0 2px 8px #183b6308}.primary{background:#183b63}.primary:hover{background:#275b94}.connection{color:#233e5f;border-left:3px solid #6585ad}.intro .institute-title{color:#183b63}.workflow-note{font-size:13px;line-height:1.6;color:#526175}.request-form input:focus,.request-form textarea:focus,select:focus{border-color:#3972b4}.record-open{color:#275b94}.manager-only-note{font-size:12px;color:#526175}#manager-intro~.request-form{margin-top:24px}@media(max-width:690px){.view-tabs button{flex:1;padding:13px 10px;font-size:13px}.view-intro h2{font-size:21px}}@media print{.view-tabs,#manager-intro,.connection{display:none!important}}
+
+.inbox-item{border-top:1px solid var(--line);padding:12px 0}.inbox-item h3{margin:5px 0}.demo-nav{display:flex;flex-wrap:wrap;gap:8px 20px;margin:0 0 18px}.demo-nav a{color:var(--green)}.demo-nav a[aria-current=page]{font-weight:700;text-decoration:none}
+footer a,.preview-note a,#calculator-editor a{color:var(--green)}
+#review-panel .primary{width:auto}#request-section{scroll-margin-top:20px}
+#calculator-editor{max-width:960px;padding-bottom:24px}
+#calculator-editor h1{font-size:26px;letter-spacing:-.5px}
+#calculator-editor .request-form{margin-top:18px}
+#calculator-editor .fee-group{border-top:1px solid var(--line);padding:12px 0}
+#calculator-editor .fee-group summary{font-weight:600;cursor:pointer}
+#calculator-editor table{min-width:560px}
+#calculator-editor th[scope=row]{background:#fff;white-space:normal}
+#calculator-editor td input{min-width:82px}
+#calculator-editor input[readonly]{background:var(--paper)}
+#calculator-editor .actions button{min-height:43px}
+.preview-note{margin:0 0 18px;background:#edf3fa;border-color:#c7d5e5;color:var(--ink)}
+.preview-note .secondary{margin-left:10px}
+#calculator-instructions{white-space:pre-line}
+@media print{#calculator-editor,.preview-note,#calculator-view.is-preview{display:none!important}}
+</style></head>
+<body data-published-settings><main><nav class="demo-nav" aria-label="Demo pages"><a href="GI_DEAPS_labrequest.html" aria-current="page">Requester</a><a href="GI_DEAPS_admin.html">Lab admin</a><a href="GI_DEAPS_calculator_editor.html">Calculator editor</a></nav><p class="subtle">Use fictional details only. Demo requests and rates are saved in this browser.</p><p id="settings-loading" role="status">Loading calculator settings…</p><section id="settings-error" class="notice" role="status" hidden>Published settings are unavailable. The built-in October 2026 rates are for reference. Reload before submitting a request.</section><div id="calculator-view" hidden><section class="intro"><h1 id="calculator-title" tabindex="-1">Geological Institute in D-EAPS RadioCarbon and Cosmolab Calculator</h1><p id="calculator-instructions">Choose your collaboration type, analyses and sample counts. Enter fictional project details to try online submission and see what the lab would download.</p></section>
+<p id="demo-fees-active" class="notice" hidden>Using rates saved from the demo editor in this browser.</p><div class="workspace" id="requester-workspace"><div class="inputs"><section class="panel settings"><div class="section-label"><span>01</span><h2>Your collaboration</h2></div><label for="tier">Funding / collaboration stream</label><select id="tier"><option value="0">GI faculty as lead PI (your own research project)</option><option value="1" selected>Collaborative research with other ETH lead-PI</option><option value="2">Collaborative research with PI outside ETH</option></select><div id="student-wrap" hidden><label class="check"><input type="checkbox" id="student" checked><span>Student performs the lab work</span></label><p class="help">Without student lab work, preparation rates for collaboration with another ETH lead-PI apply. AMS fees remain covered.</p></div><label class="check"><input type="checkbox" id="waiver"><span>AMS fees covered by a confirmed agreement</span></label><p class="help" id="waiver-help">For collaborations with another ETH lead-PI, check only if coverage is confirmed.</p></section>
+<section class="sample-section"><div class="section-label"><span>02</span><h2>Your samples</h2></div><div id="groups"></div><button id="add" class="add">＋ Add a sample group</button></section></div>
+<aside><section class="summary"><div class="eyebrow">YOUR ESTIMATE</div><div id="total" class="total" aria-live="polite">CHF 0</div><div id="count" class="subtle"></div><div class="rule"></div><div id="summary"></div><div id="savings" hidden></div><div class="rule"></div><div class="estimate-note"><span class="dot"></span><p>Planning estimate · not a formal quote</p></div><p id="estimate-edition" class="subtle small"></p><button id="download" class="text-button">Download cost breakdown (CSV)</button><button id="print" class="text-button">Print / save as PDF</button></section><div id="notices" aria-live="polite"></div><p class="source">All prices in CHF. No tax or other charges have been added; the source does not specify them.</p></aside></div>
+
+<section id="request-section" class="panel request-form"><div class="section-label"><span>03</span><h2>Request sample analysis</h2></div><p>Enter fictional contact and project details, then review and submit.</p><div class="contact-grid">
+<div><label for="contact-name">Your name *</label><input id="contact-name" autocomplete="name" maxlength="500" required></div>
+<div><label for="contact-email">Your email *</label><input id="contact-email" type="email" autocomplete="email" maxlength="500" required></div>
+<div><label for="contact-pi">Lead PI *</label><input id="contact-pi" maxlength="500" required></div>
+<div><label for="contact-institution">Institution / group *</label><input id="contact-institution" maxlength="500" required></div>
+<div><label for="contact-department">Department / lab (optional)</label><input id="contact-department" maxlength="500"></div><div><label for="contact-receivedFrom">Received from / collaboration source (optional)</label><input id="contact-receivedFrom" maxlength="500" placeholder="e.g. internal research or collaborating group"></div><div><label for="contact-project">Project / funding reference *</label><input id="contact-project" maxlength="500" required></div>
+<div><label for="contact-targetDate">Requested completion date</label><input id="contact-targetDate" type="date"></div>
+</div><label for="contact-notes">Notes or special requirements (optional)</label><textarea id="contact-notes" maxlength="4000" rows="3"></textarea><div class="actions"><button id="review-request" class="primary">Review request</button></div><div id="review-panel" class="review-panel" hidden><h3>Confirm your request</h3><p id="review-text"></p><button id="submit-request" class="primary" type="button">Submit demo request</button></div><p id="request-message" class="form-message" role="status"></p><p id="demo-admin-next" hidden><a href="GI_DEAPS_admin.html">Open lab admin to download your request</a></p></section><details class="method" id="pricing-method"><summary>How this estimate works <span>＋</span></summary><p>Each selected service is charged per sample. Add separate groups for different analyses, targets, or preparation needs. Uncheck services you do not require.</p><p>The paired ¹⁰Be + ²⁶Al option adds the sheet’s ²⁶Al chemistry, AMS, and ICP-OES rates to the ¹⁰Be workflow. The sheet describes ²⁶Al chemistry as an additional charge when both are analyzed; standalone ²⁶Al pricing needs confirmation.</p><p>Gas and solid AMS targets are alternatives for conventional ¹⁴C.</p><p id="bulk-policy"></p><p>For grant budgeting, the original fee sheet recommends rates for outside-ETH collaborations, including AMS.</p></details>
+<footer><span>Geological Institute in D-EAPS RadioCarbon and Cosmolab Calculator</span></footer></div></main><script>const calculatorTitle="Geological Institute in D-EAPS RadioCarbon and Cosmolab Calculator", intakeMode="demo", staffEditor=false;
+const service=(id,label,rates,ams=false)=>({id,label,rates,ams});
+const catalog={
+ be:{label:'¹⁰Be · In situ',services:[service('crush','Crushing & mineral separation',[50,70,115]),service('quartz','Quartz separation & purification',[100,200,300]),service('chem','Column chemistry',[100,200,300]),service('ams','AMS measurement',[0,250,250],true),service('icp','ICP-OES',[5,25,35])]},
+ pair:{label:'¹⁰Be + ²⁶Al · In situ',services:[service('crush','Crushing & mineral separation',[50,70,115]),service('quartz','Quartz separation & purification',[100,200,300]),service('chem','¹⁰Be column chemistry',[100,200,300]),service('ams','¹⁰Be AMS measurement',[0,250,250],true),service('icp','¹⁰Be ICP-OES',[5,25,35]),service('alchem','²⁶Al additional column chemistry',[100,100,150]),service('alams','²⁶Al AMS measurement',[0,250,250],true),service('alicp','²⁶Al ICP-OES',[5,25,35])]},
+ met:{label:'¹⁰Be · Meteoric',services:[service('prep','Chemical preparation (soil & sediment)',[120,200,300]),service('ams','AMS measurement',[0,250,250],true)]},
+ insitu:{label:'¹⁴C · In situ',services:[service('prep','Quartz extraction & graphitization',[100,350,600]),service('ams','AMS measurement & data reduction',[0,150,200],true)]},
+ carbon:{label:'¹⁴C · Conventional',services:[service('prep','Pretreatment',[20,35,40]),service('gas','AMS measurement · gas target',[0,80,130],true),service('solid','AMS measurement · solid target',[0,150,180],true)]}
+};
+const tiers=['GI faculty as lead PI (your own research project)','Collaborative research with other ETH lead-PI','Collaborative research with PI outside ETH'];
+let bulkPercent=10;
+const bulkThresholds={otherInsitu:10,otherCarbon:50,outside:20,outsideInsitu:10};
+function defaults(type){return catalog[type].services.filter(s=>s.id!=='solid').map(s=>s.id)}
+function calculate(groups,tier,student,waiver){
+ if(!Number.isInteger(tier)||tier<0||tier>2)throw Error('Choose a pricing category.');
+ return groups.map(g=>{
+ if(!catalog[g.type]||!Number.isSafeInteger(g.quantity)||g.quantity<1||g.quantity>100000)throw Error('Enter a whole sample count from 1 to 100,000.');
+ if(g.type==='carbon'&&g.selected.includes('gas')&&g.selected.includes('solid'))throw Error('Choose one AMS target per sample group.');
+ waiver=tier===0||(tier===1&&waiver);
+ const threshold=tier===2?(g.type==='insitu'?bulkThresholds.outsideInsitu:bulkThresholds.outside):
+  tier===1?(g.type==='insitu'?bulkThresholds.otherInsitu:g.type==='carbon'?bulkThresholds.otherCarbon:Infinity):Infinity;
+ const discountedSamples=Math.max(0,g.quantity-threshold);
+ const lines=catalog[g.type].services.filter(s=>g.selected.includes(s.id)).map(s=>{const rate=(s.ams&&waiver)?0:s.rates[tier===0&&!student&&!s.ams?1:tier];const subtotal=rate*g.quantity;const discount=s.ams?0:Math.round(rate*discountedSamples*bulkPercent)/100;return {...s,rate,subtotal,discount,total:subtotal-discount}});
+ const subtotal=lines.reduce((a,s)=>a+s.subtotal,0),discount=lines.reduce((a,s)=>a+s.discount,0),total=Math.round((subtotal-discount)*100)/100;
+ return {...g,lines,threshold,discountedSamples,subtotal,discount,unit:total/g.quantity,total};
+ });
+}
+
+const pairedBeServices = ['crush', 'quartz', 'chem', 'ams', 'icp'];
+function applyFeeSettings(settings) {
+ const {bulk, fees}=settings;
+ if (!Number.isFinite(bulk.percent) || bulk.percent<0 || bulk.percent>100 ||
+     Object.keys(bulkThresholds).some(key=>!Number.isInteger(bulk[key]) || bulk[key]<0 || bulk[key]>100000)) throw Error('Invalid bulk settings.');
+ const rates=Object.entries(catalog).flatMap(([type, analysis])=>analysis.services.map(service=>{
+  const feeType=type==='pair'&&pairedBeServices.includes(service.id)?'be':type;
+  const values=fees[feeType]?.[service.id];
+  if (!Array.isArray(values)||values.length!==3||values.some(value=>!Number.isFinite(value)||value<0||value>100000)||
+      (service.ams&&values[0]!==0)) throw Error('Invalid fee settings.');
+  return [service,values];
+ }));
+ bulkPercent=bulk.percent;
+ for (const key of Object.keys(bulkThresholds)) bulkThresholds[key]=bulk[key];
+ for (const [service,values] of rates) service.rates=values;
+}
+
+const $=s=>document.querySelector(s);const money=n=>'CHF '+new Intl.NumberFormat('en-CH',{minimumFractionDigits:2,maximumFractionDigits:2}).format(n);
+let nextId=2,groups=[{id:1,type:'be',quantity:1,selected:defaults('be')}],results=[];
+let ethWaiver=false;
+function options(){const tier=Number($('#tier').value);return {tier,student:$('#student').checked,waiver:tier===0||(tier===1&&ethWaiver)}}
+function compute(){const o=options();return calculate(groups,o.tier,o.student,o.waiver)}
+function render(){
+ const o=options();$('#student-wrap').hidden=o.tier!==0;
+ $('#waiver').checked=o.waiver;$('#waiver').disabled=o.tier!==1;
+ $('#waiver-help').textContent=o.tier===0?'AMS fees are automatically covered when GI faculty is the lead PI.':o.tier===2?'AMS fees apply when the lead PI is outside ETH.':'Check only if AMS coverage is confirmed for this collaboration.';
+ $('#groups').innerHTML=groups.map((g,i)=>`<article class="group" data-id="${g.id}"><div class="group-head"><span class="group-title">SAMPLE GROUP ${String(g.id).padStart(2,'0')}</span>${groups.length>1?'<button class="remove" type="button" aria-label="Remove sample group '+(i+1)+'">Remove ×</button>':''}</div><div class="group-fields"><div><label for="type-${g.id}">Analysis</label><select id="type-${g.id}" class="analysis">${Object.entries(catalog).map(([k,v])=>`<option value="${k}" ${g.type===k?'selected':''}>${v.label}</option>`).join('')}</select></div><div><label for="qty-${g.id}">Samples</label><input id="qty-${g.id}" class="quantity" type="number" inputmode="numeric" min="1" max="100000" step="1" required value="${Number.isSafeInteger(g.quantity)?g.quantity:''}"></div></div><div class="services-title">SERVICES <span style="float:right">CHF / SAMPLE</span></div>${catalog[g.type].services.map(s=>{const rate=s.ams&&o.waiver?0:s.rates[o.tier===0&&!o.student&&!s.ams?1:o.tier];return `<div class="service"><label class="check"><input type="checkbox" data-service="${s.id}" ${g.selected.includes(s.id)?'checked':''}><span>${s.label}</span></label><span class="rate">${rate.toFixed(2)}</span></div>`}).join('')}<div class="group-total"><span class="unit-total"></span><strong class="batch-total"></strong></div></article>`).join('');update();
+}
+function update(){
+ try{results=compute();$('#download').disabled=settingsPreview||staffEditor;$('#print').disabled=settingsPreview||staffEditor;
+ $('#total').textContent=money(results.reduce((a,g)=>a+g.total,0));const count=groups.reduce((a,g)=>a+g.quantity,0);$('#count').textContent=`${count.toLocaleString('en-CH')} sample${count===1?'':'s'} across ${groups.length} group${groups.length===1?'':'s'}`;
+ const savings=results.reduce((a,g)=>a+g.discount,0),before=results.reduce((a,g)=>a+g.subtotal,0);$('#savings').hidden=!savings;$('#savings').innerHTML=`<div class="summary-row"><span>Before bulk discount</span><strong>${money(before)}</strong></div><div class="summary-row"><span>Bulk savings</span><strong>−${money(savings)}</strong></div>`;
+ $('#summary').innerHTML=results.map(g=>`<div class="summary-row"><span>${catalog[g.type].label}<small>${g.quantity} sample${g.quantity===1?'':'s'} · ${money(g.unit)}${g.discount?' avg.':''} each</small></span><strong>${money(g.total)}</strong></div>`).join('');
+ for(const g of results){const el=document.querySelector(`[data-id="${g.id}"]`);el.querySelector('.unit-total').textContent=`${money(g.unit)} / sample${g.discount?' (average)':''}`;el.querySelector('.batch-total').textContent=money(g.total)}
+ const notices=[];if(groups.some(g=>!g.selected.length))notices.push(['No services selected','A sample group has no selected services and contributes CHF 0.']);
+ for(const [i,g] of results.entries())if(g.discount>0)notices.push([`Group ${i+1}: ${money(g.discount)} bulk savings`,`${bulkPercent}% off non-AMS fees for the ${g.discountedSamples} sample${g.discountedSamples===1?'':'s'} above the ${g.threshold}-sample threshold. AMS fees are unchanged.`]);
+ $('#notices').innerHTML=notices.map(([a,b])=>`<div class="notice"><strong>${a}</strong>${b}</div>`).join('');
+ }catch(e){results=[];$('#savings').hidden=true;$('#total').textContent='Check sample count';$('#count').textContent=e.message;$('#summary').innerHTML='';$('#notices').innerHTML='';$('#download').disabled=true;$('#print').disabled=true;document.querySelectorAll('.unit-total,.batch-total').forEach(el=>el.textContent='—')}
+}
+$('#groups').addEventListener('change',e=>{const el=e.target.closest('.group');if(!el)return;const g=groups.find(g=>g.id===Number(el.dataset.id));if(e.target.matches('.analysis')){g.type=e.target.value;g.selected=defaults(g.type);render()}else if(e.target.dataset.service){const id=e.target.dataset.service;if(e.target.checked){if(g.type==='carbon'&&['gas','solid'].includes(id))g.selected=g.selected.filter(x=>!['gas','solid'].includes(x));g.selected.push(id)}else g.selected=g.selected.filter(x=>x!==id);render()}});
+$('#groups').addEventListener('input',e=>{if(!e.target.matches('.quantity'))return;const g=groups.find(g=>g.id===Number(e.target.closest('.group').dataset.id));g.quantity=e.target.value===''?NaN:Number(e.target.value);update()});
+$('#groups').addEventListener('click',e=>{if(!e.target.matches('.remove'))return;groups=groups.filter(g=>g.id!==Number(e.target.closest('.group').dataset.id));render();$('#add').focus()});
+$('#add').onclick=()=>{const id=nextId++;groups.push({id,type:'be',quantity:1,selected:defaults('be')});render();$(`#type-${id}`).focus()};
+for(const id of ['tier','student'])$('#'+id).addEventListener('change',render);
+$('#waiver').addEventListener('change',()=>{ethWaiver=$('#waiver').checked;render()});
+$('#print').onclick=()=>{if(!settingsPreview&&!staffEditor)window.print()};
+$('#download').onclick=()=>{if(settingsPreview||staffEditor||!results.length)return;const o=options();const rows=[[calculatorTitle],['Rate edition',activeSettings.edition],['Pricing category',tiers[o.tier]],['Student performs lab work',o.tier===0?(o.student?'Yes':'No'):'Not applicable'],['Confirmed AMS agreement',o.waiver?'Yes':'No'],[],['Group','Analysis','Samples','Service','CHF base rate per sample','CHF before discount','CHF bulk savings','CHF total']];results.forEach((g,i)=>g.lines.forEach(s=>rows.push([i+1,catalog[g.type].label,g.quantity,s.label,s.rate.toFixed(2),s.subtotal.toFixed(2),s.discount.toFixed(2),s.total.toFixed(2)])));rows.push([],['BEFORE DISCOUNT CHF',results.reduce((a,g)=>a+g.subtotal,0).toFixed(2)],['BULK SAVINGS CHF',results.reduce((a,g)=>a+g.discount,0).toFixed(2)],['TOTAL CHF',results.reduce((a,g)=>a+g.total,0).toFixed(2)],['Planning estimate only. Unspecified taxes/charges are not included.'],['Bulk discount policy',bulkPolicyText()]);const csv=rows.map(r=>r.map(v=>'"'+String(v).replaceAll('"','""')+'"').join(',')).join('\r\n');const url=URL.createObjectURL(new Blob(['\uFEFF'+csv],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='COSMOLAB-cost-estimate.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+
+function trSerial(value,epoch1904=false){if(!value)return '';if(!/^\d{4}-\d{2}-\d{2}$/.test(value)||!Number.isFinite(Date.parse(value))||new Date(value+'T00:00:00Z').toISOString().slice(0,10)!==value)throw Error('Enter dates as YYYY-MM-DD.');return Date.parse(value+'T00:00:00Z')/86400000+(epoch1904?24107:25569)}
+const escapeHTML=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const notice=text=>$('#request-message').textContent=text;
+let reviewed=null,submissionKey=null,submittedPayload=null,submitting=false;
+let requestWrapStyle=0;
+function contact(){return Object.fromEntries(['name','email','pi','institution','department','receivedFrom','project','targetDate','notes'].map(k=>[k,$('#contact-'+k).value.trim()]))}
+function payload(){return {schemaVersion:2,contact:contact(),options:options(),groups:groups.map(g=>({id:g.id,type:g.type,quantity:g.quantity,selected:[...g.selected]}))}}
+function validate(p){
+ if(!p.contact.name||!p.contact.pi||!p.contact.institution||!p.contact.project)throw Error('Enter your name, lead PI, institution and project / funding reference.');
+ if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(p.contact.email))throw Error('Enter a valid email address.');
+ if(p.contact.targetDate)trSerial(p.contact.targetDate);
+ const priced=calculate(p.groups,p.options.tier,p.options.student,p.options.waiver);if(priced.some(g=>!g.lines.length))throw Error('Choose at least one service for each sample group.');
+ return priced;
+}
+function invalidate(){
+ reviewed=null;submissionKey=null;$('#review-panel').hidden=true;
+ if (!submitting) $('#review-request').disabled=settingsPreview||staffEditor||!publishedSettingsAvailable||intakeMode==='preview';
+}
+function requestRecord(p,id){
+ const priced=validate(p);
+ return {...p,id,priced,status:'Submitted',createdAt:new Date().toISOString(),estimate:{
+  subtotal:priced.reduce((a,g)=>a+g.subtotal,0),discount:priced.reduce((a,g)=>a+g.discount,0),
+  total:Math.round(priced.reduce((a,g)=>a+g.total,0)*100)/100}};
+}
+function saveBlob(blob,name){const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1500);}
+
+const rateGroups = Object.entries(catalog).map(([type, analysis]) => [
+  type, analysis.services.filter(service => type !== 'pair' || !pairedBeServices.includes(service.id))
+]);
+const introText = $('#calculator-instructions');
+const defaultSettings = {
+  version: 1,
+  edition: 'October 2026',
+  instructions: introText.textContent,
+  bulk: { percent: 10, ...bulkThresholds },
+  fees: Object.fromEntries(rateGroups.map(([type, services]) => [
+    type, Object.fromEntries(services.map(({ id, rates }) => [id, [...rates]]))
+  ]))
+};
+
+let publishedSettings = defaultSettings;
+let activeSettings = publishedSettings;
+let draftSettings = publishedSettings;
+let settingsPreview = false;
+let publishedSettingsAvailable = true;
+
+function validateSettings(settings) {
+  const decimal = (value, max) => Number.isFinite(value) && value >= 0 && value <= max &&
+    Math.abs(value * 100 - Math.round(value * 100)) < 1e-7;
+  const validText = (value, max) => typeof value === 'string' && value.trim() && value.length <= max;
+  if (settings?.version !== 1 || !validText(settings.edition, 80) || !validText(settings.instructions, 800)) {
+    throw Error('Enter a fee schedule edition and instructions.');
+  }
+  if (settings.intakeUrl) {
+    const url = new URL(settings.intakeUrl);
+    if (url.protocol !== 'https:' || url.username || url.password) throw Error('Use an HTTPS GI intake URL.');
+  }
+  if (!decimal(settings.bulk?.percent, 100) || Object.keys(bulkThresholds).some(key => {
+    const value = settings.bulk[key];
+    return !Number.isInteger(value) || value < 0 || value > 100000;
+  })) throw Error('Check the discount percentage and sample thresholds.');
+  for (const [type, services] of rateGroups) {
+    for (const { id, ams } of services) {
+      const rates = settings.fees?.[type]?.[id];
+      if (!Array.isArray(rates) || rates.length !== 3 || rates.some(rate => !decimal(rate, 100000)) ||
+          (ams && rates[0] !== 0)) throw Error('Enter valid CHF fees with up to two decimal places.');
+    }
+  }
+  return settings;
+}
+
+function bulkPolicyText() {
+  const { percent, otherInsitu, otherCarbon, outside, outsideInsitu } = activeSettings.bulk;
+  if (percent === 0) return 'No bulk discount is currently applied.';
+  return `The bulk discount is ${percent}% off non-AMS fees on samples above each threshold. GI-led projects have no bulk discount. Other ETH: ${otherInsitu} for in-situ ¹⁴C and ${otherCarbon} for conventional ¹⁴C. Outside ETH: ${outside} generally and ${outsideInsitu} for in-situ ¹⁴C.`;
+}
+
+function applySettings(settings, preview = false) {
+  activeSettings = settings;
+  settingsPreview = preview;
+  applyFeeSettings(settings);
+  introText.textContent = settings.instructions;
+  $('#estimate-edition').textContent = `Fee schedule: ${settings.edition}. Confirm the final quote with COSMOLAB.`;
+  $('#bulk-policy').textContent = bulkPolicyText();
+  if ($('#settings-preview')) $('#settings-preview').hidden = !preview;
+  const intakeLink = $('#live-intake-link');
+  if (intakeLink && settings.intakeUrl && /^https:\/\//i.test(settings.intakeUrl)) {
+    intakeLink.href = settings.intakeUrl;
+    intakeLink.hidden = false;
+    $('#intake-unavailable').hidden = true;
+  }
+  $('#calculator-view').classList.toggle('is-preview', preview);
+  invalidate();
+  notice('');
+  render();
+}
+
+async function initializeCalculator() {
+  if (document.body.hasAttribute('data-published-settings')) {
+    try {
+      const response = await fetch('./settings.json', { cache: 'no-cache' });
+      if (!response.ok) throw Error('Published settings are unavailable.');
+      publishedSettings = validateSettings(await response.json());
+    } catch {
+      $('#settings-error').hidden = false;
+      publishedSettingsAvailable = false;
+      if ($('#export-settings')) $('#export-settings').disabled = true;
+    }
+  }
+  draftSettings = publishedSettings;
+  if (intakeMode === 'demo' && typeof localStorage !== 'undefined') {
+    try {
+      const saved = localStorage.getItem(demoSettingsKey);
+      if (saved) draftSettings = validateSettings(JSON.parse(saved));
+    } catch {
+      // The published rates are still available with browser storage disabled.
+    }
+  }
+  applySettings(draftSettings);
+  const demoFees = $('#demo-fees-active');
+  if (demoFees) demoFees.hidden = draftSettings === publishedSettings;
+  if ($('#calculator-editor')) initializeEditor();
+  else $('#calculator-view').hidden = false;
+  $('#settings-loading').hidden = true;
+}
+
+$('#review-request').onclick = () => {
+  if (submitting || settingsPreview || staffEditor || !publishedSettingsAvailable || intakeMode === 'preview') return;
+  try {
+    const p = payload();
+    const priced = validate(p);
+    const snapshot = JSON.stringify(p);
+    if (snapshot === submittedPayload) {
+      notice('These details have already been submitted. Change the details to make a new request.');
+      return;
+    }
+    if (snapshot !== reviewed) submissionKey = crypto.randomUUID();
+    reviewed = snapshot;
+    const total = priced.reduce((sum, group) => sum + group.total, 0);
+    $('#review-text').textContent = `${p.contact.project} · ${p.groups.reduce((a,g)=>a+g.quantity,0)} samples · ${tiers[p.options.tier]} · Estimated ${money(total)}.`;
+    $('#review-panel').hidden = false;
+    notice('');
+    $('#submit-request').focus();
+  } catch (error) { notice(error.message); }
+};
+$('#submit-request').onclick = async () => {
+  if (submitting || settingsPreview || !reviewed || !publishedSettingsAvailable || intakeMode === 'preview') return;
+  const p = payload(), snapshot = JSON.stringify(p);
+  if (snapshot !== reviewed) { invalidate(); notice('Details changed. Review your request again.'); return; }
+  const button = $('#submit-request');
+  submitting = true;
+  button.disabled = true;
+  $('#review-request').disabled = true;
+  notice(intakeMode === 'demo' ? 'Preparing the demo request…' : 'Submitting your request…');
+  try {
+    let record;
+    if (intakeMode === 'demo') {
+      const id = 'REQ-'+new Date().toISOString().slice(0,10).replaceAll('-','')+'-'+submissionKey.slice(0,8).toUpperCase();
+      record = requestRecord(p, id);
+      saveDemoRequest(record);
+      $('#demo-admin-next').hidden = false;
+    } else {
+      const response = await fetch('/api/requests', {
+        method:'POST', headers:{'Content-Type':'application/json','Idempotency-Key':submissionKey},
+        body:JSON.stringify({request:p, edition:activeSettings.edition, total:Math.round(compute().reduce((a,g)=>a+g.total,0)*100)/100})
+      });
+      if (response.status === 401) throw Error('Sign in through the GI request site before submitting.');
+      const result = await response.json();
+      if (!response.ok) throw Error(result.error || 'The lab could not accept the request. Try again.');
+      record = result;
+    }
+    submittedPayload = snapshot;
+    $('#review-panel').hidden = true;
+    const message = intakeMode === 'demo'
+      ? `Demo request ${record.id} submitted. It is ready in the lab admin inbox.`
+      : `Request ${record.id} submitted. The lab can now download it and will confirm timing and charges.`;
+    notice(message);
+  } catch (error) {
+    notice(error instanceof TypeError || error instanceof SyntaxError
+      ? 'Submission could not be confirmed. Retry with the same details to avoid duplicate requests.'
+      : error.message);
+  } finally {
+    submitting = false;
+    button.disabled = false;
+    $('#review-request').disabled = settingsPreview;
+  }
+};
+document.addEventListener('input', e => {
+  if (e.target.closest('#request-section') && !e.target.closest('#review-panel') || e.target.matches('.quantity')) invalidate();
+});
+document.addEventListener('change', e => { if(e.target.closest('.inputs'))invalidate(); });
+
+const demoRequestPrefix = 'gi-deaps-demo-request:';
+const demoSettingsKey = 'gi-deaps-demo-settings';
+
+function saveDemoRequest(request) {
+  try {
+    localStorage.setItem(demoRequestPrefix + request.id, JSON.stringify(request));
+  } catch {
+    throw Error('This browser could not save the demo request. Allow site storage and try again.');
+  }
+}
+
+function readDemoRequests() {
+  return Object.keys(localStorage).filter(key => key.startsWith(demoRequestPrefix))
+    .map(key => JSON.parse(localStorage.getItem(key)))
+    .filter(Boolean).sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+}
+
+function refreshDemoInbox() {
+  try {
+    const records = readDemoRequests();
+    renderInbox(records, $('#inbox-body'));
+    $('#inbox-status').textContent = `${records.length} demo request${records.length===1?'':'s'} saved in this browser.`;
+    $('#clear-demo-requests').disabled = !records.length;
+  } catch {
+    $('#inbox-status').textContent = 'The demo inbox could not read this browser’s site storage.';
+  }
+}
+
+if (typeof location !== 'undefined') initializeCalculator();</script></body></html>
