@@ -271,9 +271,7 @@ $('#submit-request').onclick = async () => {
   try {
     let record;
     if (intakeMode === 'demo') {
-      const id = 'REQ-'+new Date().toISOString().slice(0,10).replaceAll('-','')+'-'+submissionKey.slice(0,8).toUpperCase();
-      record = requestRecord(p, id);
-      saveDemoRequest(record);
+      record = await saveDemoRequest(p);
       $('#demo-admin-next').hidden = false;
     } else {
       const response = await fetch('/api/requests', {
@@ -308,17 +306,25 @@ document.addEventListener('change', e => { if(e.target.closest('.inputs'))invali
 
 const demoRequestPrefix = 'gi-deaps-demo-request:';
 const demoSettingsKey = 'gi-deaps-demo-settings';
+const demoCounterKey = 'gi-deaps-demo-counter';
 
-function saveDemoRequest(request) {
+async function saveDemoRequest(payload) {
   try {
-    localStorage.setItem(demoRequestPrefix + request.id, JSON.stringify(request));
+    return await navigator.locks.request(demoCounterKey, () => {
+      const next = Number(localStorage.getItem(demoCounterKey) || 0) + 1;
+      const request = requestRecord(payload, 'D' + String(next).padStart(4, '0'));
+      localStorage.setItem(demoCounterKey, String(next));
+      localStorage.setItem(demoRequestPrefix + request.id, JSON.stringify(request));
+      return request;
+    });
   } catch {
-    throw Error('This browser could not save the demo request. Allow site storage and try again.');
+    throw Error('This browser could not save the demo request. Try a current browser with site storage enabled.');
   }
 }
 
 function readDemoRequests() {
-  return Object.keys(localStorage).filter(key => key.startsWith(demoRequestPrefix))
+  return Object.keys(localStorage).filter(key => key.startsWith(demoRequestPrefix) &&
+      /^D\d{4,}$/.test(key.slice(demoRequestPrefix.length)))
     .map(key => JSON.parse(localStorage.getItem(key)))
     .filter(Boolean).sort((a, b) => b.createdAt.localeCompare(a.createdAt));
 }
